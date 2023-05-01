@@ -5,10 +5,10 @@ on: [push]
 jobs:
   build:
     name: Test And Create Report Artifact
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ["3.6.15"]
+        python-version: ["3.8"]
 
     steps:
       - uses: actions/checkout@v2
